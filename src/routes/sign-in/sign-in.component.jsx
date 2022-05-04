@@ -8,6 +8,7 @@ const SignIn = () => {
     const response = await signInWithGooglePopup();
     console.log({ response });
     const userDocRef = await createUserDocumentFromAuth(response.user);
+    console.log({ userDocRef });
   };
 
   return (
